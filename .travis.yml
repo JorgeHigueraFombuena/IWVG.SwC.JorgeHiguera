@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  
+branches:
+  only:
+    - master
+    - develop
+    
+notifications:
+  email:
+    recipients:
+      - j.higuera@alumnos.upm.es
+      
+script: mvn verify
