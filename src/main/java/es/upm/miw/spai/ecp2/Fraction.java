@@ -60,4 +60,10 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public Fraction multiplica(Fraction f){
+    	this.numerator = this.numerator * f.numerator;
+    	this.denominator = this.denominator * f.denominator;
+    	return this;
+    }
+    
 }

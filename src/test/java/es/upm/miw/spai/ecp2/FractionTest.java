@@ -30,5 +30,11 @@ public class FractionTest {
 	public void testDecimal() {
 		assertEquals((double)2/3, f.decimal(), 0.001);
 	}
+	
+	@Test
+	public void testMultiplica() {
+	    Fraction resultFraction = f.multiplica(new Fraction(5,3));
+		assertEquals((double)10/9, resultFraction.decimal(), 0.001);
+	}
 
 }
