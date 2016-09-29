@@ -33,7 +33,7 @@ public class UserTest {
 	
 	@Test 
 	public void testGetNobreMayusculas(){
-		System.err.println(u.getNombreMayusculas());
+		assertEquals("JORGE HIGUERA", u.getNombreMayusculas());
 	}
 
 }
