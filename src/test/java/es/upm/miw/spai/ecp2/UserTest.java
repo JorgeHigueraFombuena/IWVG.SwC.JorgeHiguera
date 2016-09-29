@@ -30,5 +30,10 @@ public class UserTest {
 	public void testInitials() {
 		assertEquals("J.", u.initials());
 	}
+	
+	@Test 
+	public void testGetNobreMayusculas(){
+		System.err.println(u.getNombreMayusculas());
+	}
 
 }
