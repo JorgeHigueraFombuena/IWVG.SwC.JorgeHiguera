@@ -72,5 +72,16 @@ public class Fraction {
          result.denominator=(this.denominator*f.denominator);
          return result;
     }
-    
+    public Fraction suma(Fraction f){
+        if(this.denominator != f.denominator){
+            //Si diferentes denominadores, calculo mínimo común múltiplo
+            int denominatorAux = this.denominator;
+            this.numerator = this.numerator * f.denominator;
+            this.denominator = this.denominator * f.denominator;
+            f.numerator = f.numerator * denominatorAux;
+            f.denominator = f.denominator * denominatorAux;
+        }
+        this.numerator = this.numerator + f.numerator;
+        return this;
+    } 
 }
