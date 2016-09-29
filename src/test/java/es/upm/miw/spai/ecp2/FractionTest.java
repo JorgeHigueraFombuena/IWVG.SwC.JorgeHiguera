@@ -42,7 +42,6 @@ public class FractionTest {
 		Fraction resultFraction = f.resta(new Fraction(1,3));
 		Fraction division = new Fraction(1,3);
 		assertEquals(division.decimal(), resultFraction.decimal(), 0.001);
-		System.err.println(resultFraction.getNumerator() + "/" + resultFraction.getDenominator());
 	}
 
 }
