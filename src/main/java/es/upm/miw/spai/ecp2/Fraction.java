@@ -66,4 +66,11 @@ public class Fraction {
     	return this;
     }
     
+    public Fraction resta(Fraction f){
+    	 Fraction result =new Fraction();
+         result.numerator=(this.numerator*f.denominator)-(this.denominator*f.numerator);
+         result.denominator=(this.denominator*f.denominator);
+         return result;
+    }
+    
 }
