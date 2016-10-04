@@ -43,6 +43,7 @@ public class FractionTest {
 		Fraction division = new Fraction(1,3);
 		assertEquals(division.decimal(), resultFraction.decimal(), 0.001);
 	}
+	
     @Test
 	public void testSuma(){
         Fraction resultado = f.suma(new Fraction(4,3));
